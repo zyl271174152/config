@@ -1,0 +1,24 @@
+server:
+  port: 8890
+
+spring:
+  application:
+    name: client2
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://127.0.0.1:8888/eureka/
+    #是否要将自身的实例信息注册到 Eureka Server
+    register-with-eureka: true
+    #是否从 Eureka Server 获取注册信息
+    fetch-registry: true
+    #从 Eureka Server 获取注册信息的间隔时间，单位：秒 默认30
+    registry-fetch-interval-seconds: 30
+
+
