@@ -3,11 +3,11 @@ server:
 spring:
   application:
     name: client2
-    datasource:
-      url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
-      driverClassName: com.mysql.jdbc.Driver
-      username: root
-      password: 123456
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
   profiles:
     active: dev
   cloud:
