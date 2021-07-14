@@ -5,19 +5,6 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
-  cloud:
-    config:
-      enabled: true
-      profile: dev
-      label: main
-      discovery:
-        enabled: true
-        service-id: config-test
-      name: client-two
-#      uri:
-#      import-check:
-#        enabled: false
-    #  import: configserver:http://127.0.0.1:8892
 eureka:
   instance:
     prefer-ip-address: true
