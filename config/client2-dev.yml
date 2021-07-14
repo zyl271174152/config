@@ -4,7 +4,7 @@ spring:
   application:
     name: client2
   datasource:
-    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+    url: jdbc:mysql://localhost:3306/test
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
