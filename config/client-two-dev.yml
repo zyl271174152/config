@@ -2,7 +2,7 @@ server:
   port: 8890
 spring:
   application:
-    name: client2
+    name: client-two
   datasource:
     url: jdbc:mysql://localhost:3306/test
     driver-class-name: com.mysql.cj.jdbc.Driver
